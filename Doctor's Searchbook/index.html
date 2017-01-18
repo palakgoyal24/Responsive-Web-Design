@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8" />
+	<title>Doctor Searchbook | Home Page</title>
+	<meta name="description" content="Welcome page for finding a doctor.">
+	<meta name="keywords" content="city,doctors">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css" text="text/css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="scripts/autocomplete.js"></script>
+</head>
+
+<body>
+<header>
+<!-- Inspired by bootstrap-->
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+		<ul class="nav navbar-nav ">
+			<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="">Welcome <span class="glyphicon glyphicon-user"></span></a></li>
+		</ul>
+  </div>
+</nav>
+</header>
+
+<div class="container-fluid">
+	<h1>Doctor Finder</h1>
+		<div class="row">
+			<div class="col-md-6">
+					<form class="navbar-form" role="search">
+		 				<div class="form-group">
+							<div class="col-sm-12">
+								<label for="City">City:<label style="color:red;">*</label></label>
+								<select name="City" id="City" class="form-control" required>
+									<option value=""></option>
+									<option value="Banglore">Bangalore</option>
+									<option value="Chennai">Chennai</option>
+									<option value="Hyderabad">Hyderabad</option>
+									<option value="Jaipur">Jaipur</option>
+									<option value="Mumbai">Mumbai</option>
+									<option value="Pune">Pune</option>
+								</select>
+							</div>
+						</div>
+		 				<div class="form-group">
+							<div class="col-sm-4">
+								<div class="input-group add-on">
+									<div class = "ui-widget">
+					 					<input id="doctor-name" type="text" placeholder="Input Doctor's Name" class="form-control" required>
+					 				</div>
+						 			<div class="input-group-btn">
+				 						<button class="btn btn-default" type="Submit"><i class="glyphicon glyphicon-search"></i></button>
+									</div>
+		 						</div>
+							</div>
+						</div>
+					</form>
+  			</div>
+			</div>
+</div>
+
+<hr>
+<footer>
+<div class="container-fluid">
+  <p align="right">&copy;&nbsp;Palak Goyal</p>
+</div>
+</footer>
+</body>
+</html>
