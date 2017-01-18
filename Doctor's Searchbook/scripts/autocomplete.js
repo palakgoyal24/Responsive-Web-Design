@@ -17,11 +17,10 @@ $(function() {
     "Utkarsh Kaushik"
   ];
 
-  $(function(){
-    ( "#doctor-name").autocomplete({
+  $( "#doctor-name").autocomplete({
     source: doctorNames,
     minLength: 2
-  })});
+  });
 
   //To search only from the beginning of the string
   $.ui.autocomplete.filter = function (array, term){
