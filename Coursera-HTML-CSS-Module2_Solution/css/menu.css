@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Comic Sans MS';
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.Sandwich, .Coffee, .Crisps{
+  padding: 15px;
+}
+
+section{
+  position: relative;
+}
+
+#sandwich, #coffee, #crisps{
+  position: absolute;
+  top: 0;
+  right:0;
+  margin-top: 0;
+  padding:5px;
+  border: 1px solid black;
+  font-family: cursive;
+}
+
+p{
+  border: 1px solid black;
+  width: 100%;
+  padding: 40px 20px 20px 20px;
+  font-family: serif;
+  /*text-align: justify;*/
+}
+
+#sandwichText{
+  background-color: #000080;
+  color: white;
+}
+
+#sandwich{
+  background-color: #cce6ff;
+}
+
+#coffeeText{
+  background-color: #ff3300;
+}
+
+#coffee{
+  background-color: #ffff4d;
+}
+
+#crispsText{
+  background-color: #2eb82e;
+}
+
+#crisps{
+  background-color: #664400;
+  color: white;
+}
+
+/**Basic Responsive Design**/
+.row{
+  width: 100%;
+}
+
+/***Desktops***/
+@media (min-width: 992px) {
+.Sandwich, .Coffee, .Crisps{
+  width: 33.3%;
+  float: left;
+}
+}
+
+/***Tablets***/
+@media (min-width: 768px) and (max-width: 991px) {
+  .Sandwich{
+    width: 50%;
+    float: left;
+  }
+
+  .Coffee{
+    width: 50%;
+    float: right;
+  }
+  .Crisps{
+    width:100%;
+    clear: both;
+  }
+}
