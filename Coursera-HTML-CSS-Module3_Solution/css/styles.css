@@ -1,0 +1,92 @@
+body{
+  font-size: 16px;
+  color: #4d004d;
+  background-color: #ffffff;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/***** Navbar*******/
+#header-nav{
+  background-color: #80d4ff;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand{
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.navbar-brand h1 { /* Food, LLC */
+  font-family: 'Ubuntu', sans-serif;
+  color: #661400;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+/*****Nav Bar List******/
+
+#nav-list {
+  margin-top: 0px;
+  margin-bottom: 0;
+  background-color: #e6ffff;
+  text-align: center;
+}
+#nav-list a {
+  color: #e0b3ff;
+
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a p {
+  font-size: 1.8em;
+}
+
+#nav-list hr{
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+} /*** End of Nav Bar List****/
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/*** End of Nav Bar*****/
+
+/******Main Content*****************/
+.chicken{
+  padding: 15px;
+  position: relative;
+  border: 1px solid black;
+  width: 100%;
+  padding: 60px 20px 20px 20px;
+  margin-top: 20px;
+  font-family: serif;
+  background-color: #000080;
+  color: white;
+}
+
+#chickenTitle{
+  position: absolute;
+  top: 0;
+  right:0;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  padding: 15px;
+  font-family: cursive;
+  font-size: 1.4em;
+}
+/***** End of Main Content****/
