@@ -1,0 +1,86 @@
+/** HEADER **/
+#header-nav {
+  border-radius: 0;
+  border: 0;
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Comic Sans MS', serif;
+  color: white;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: white;
+  text-align: center;
+  font-size: 1.1em;
+  font-family: 'Comic Sans MS', serif;
+  font-weight: bold;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+ul li.active {
+    background-color: #cceeff;
+    opacity: .8;
+}
+/*#nav-list a span {
+  font-size: 1.8em;
+}*/
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -20px;
+}
+/* END HEADER */
+
+/* MAIN CONTENT index.html*/
+#icons{
+  margin-bottom: 30px;
+}
+
+#icon-names{
+  margin-top: 20px;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+/** End of index.html **/
+
+/*** FOOTER ***/
+#connect{
+  margin-bottom: 20px;
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+
+  .navbar-brand h1 { /* App Name */
+    padding-top: 5px;
+    margin-bottom: 20px;
+    font-size: 6vw /* 1vw = 1% of viewport width */
+  }/* End of Header */
+
+.animate1{
+  height: 100px;
+  width: 100px;
+}
+}

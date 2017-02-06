@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-GB" manifest="Offline.appcache">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Rail Details.">
+	<meta name="keywords" content="rail,railcard">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student Helpbook | Rail</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheets/bounce.css" />
+	<link rel="stylesheet" href="stylesheets/styles.css" />
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<header>
+	<!-- Inspired by bootstrap-->
+	<nav id="header-nav" class="navbar navbar-dark bg-primary">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<div class="navbar-brand visible-xs">
+					<a href="index.html"><h1>Student Helpbook</h1></a>
+				</div>
+
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<div id="collapsable-nav" class="collapse navbar-collapse">
+				 <ul id="nav-list" class="nav navbar-nav navbar-left">
+					<li>
+						<a href="index.html">
+							<span class="glyphicon glyphicon-home"></span></a>
+					</li>
+					<li>
+						<a href="Bus.html">
+							Buses</a>
+					</li>
+					<li>
+						<a href="Shops.html">Grocery</a>
+					</li>
+					<li>
+						<a href="BRP.html">BRP Collection</a>
+					</li>
+					<li class='active'>
+						<a href="Rail.html">Rail</a>
+					</li>
+					<li>
+						<a href="Emergency Contacts.html">Emergency Contacts</a>
+					</li>
+					<li>
+						<a href="Location.html">Current Location</a>
+					</li>
+					<li>
+						<a href="Discounts.html">Student Discounts</a>
+					</li>
+					<li>
+						<a href="Pointers.html">FAQs</a>
+					</li>
+				</ul>
+
+				<ul id="nav-list" class="nav navbar-nav navbar-right">
+					<li>
+						<a href="Registration.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+					</li>
+					<script type="text/javascript">
+						//Using sessionStorage to display the Username in place of Login tab.
+						if(sessionStorage.getItem('Username'))
+						{
+							document.write("<li><a href='#'>Welcome " + sessionStorage.getItem('Username') + "</a>");
+						}
+						else
+						{
+							document.write("<li><a href='Login.html'><span class='glyphicon glyphicon-log-in'></span> Login</a></li>")
+						}
+						</script>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	</header>
+
+<div class="container-fluid">
+	<p>Guildford is just 40 mins train ride away from London. There are about 4-5 trains running every hour to London and it is the fastest way to reach there.</p>
+	<p>There are many types of railcards available like '16-25 railcard', 'together railcard', etc. If using the railcard you get 1/3rd off on the normal price of the ticket.</p>
+	<p>Railcards can be bought either from the station by paying 30 GBP(for the 16-25 railcard) for a year or you can buy it online.</p>
+	<p>If you buy the railcard online you can use the codes <b>NUS12</b> or <b>LEAFLET3</b> to further get discounts on purchasing the railcard.</p>
+	<p>If you are travelling in London, you can club your railcard with the oyster to avail discounts while travelling within London as well. The railcard can be used to avail discounts on trains across all over UK.</p>
+	<p>Please check the below link for further clarifications on the terms and conditions and also to purchase the railcard.</p>
+	<ul>
+		<li><a class="home" href="http://www.railcard.co.uk/" target="_blank">Railcard</a></li>
+	</ul>
+</div>
+
+<footer>
+	<hr>
+	<div id="connect" class="container-fluid">
+		<h5>Connect with Surrey</h5>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 text-left">
+					<a title="Find us on Facebook" href="https://www.facebook.com/universityofsurrey?fref=ts"><img src="Images\facebook-icon.png" alt="Facebook Logo" class="animate2" width="35" height="35"/> </a>
+					<a title="Follow us on Twitter" href="https://twitter.com/UniOfSurrey"><img src="Images\Twitter-icon.png" alt="Twitter Logo" class="animate2" width="35" height="35" /> </a>
+					<a title="Watch us on YouTube" href="http://www.youtube.com/user/UniversityofSurrey"> <img src="Images\youtube-icon.png" alt="Youtube Logo" class="animate2" width="35" height="35"/> </a>
+					<a title="Join us on Google+" href="https://plus.google.com/+universityofsurrey"> <img src="Images\Google-plus-icon.png" alt="Google + Logo" class="animate2" width="35" height="35"/> </a>
+					<a title="Find us on the Conversation" href="http://theconversation.com/institutions/university-of-surrey"> <img src="Images\conversations-icon.png" alt="Conversation Logo" class="animate2" width="35" height="35"/> </a>
+					<a title="Look at us on Instagram" href="http://instagram.com/uniofsurrey?ref=badge"> <img src="Images\instagram-icon.png" alt="Instagram Logo" class="animate2" width="35" height="35"/> </a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 text-right">&copy; Copyright Palak Goyal</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

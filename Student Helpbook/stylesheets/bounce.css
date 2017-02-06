@@ -1,0 +1,67 @@
+/*To make the icons bounce
+http://www.developerdrive.com/2015/01/8-simple-css-hover-effects/ No. 5 to get the Bounce effect*/
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+img.animate1:hover {
+	animation: bounce 1s;
+}
+
+/*Aligns the caption to centre below the icons*/
+.caption {
+	margin: 5px;
+	text-align: center;
+	font-style: italic;
+	font-size: 22px;
+	float: left; }
+/*To display a dotted border arround the social media icons
+http://www.developerdrive.com/2015/01/8-simple-css-hover-effects/ No.7 to get the Dotted borders*/
+img.animate2 {
+	border: 1px;
+}
+img.animate2:hover {
+	border: 3px dotted #3a7999;
+	color: #3a7999;
+	background: rgba(0,0,0,0);
+}
+
+/* unvisited link */
+	a.home:link {
+		color: blue;
+	}
+/* visited link */
+	a.home:visited {
+		color: green;
+	}
+/* mouse over link */
+	a.home:hover {
+		color: darkblue;
+	}
+/* selected link */
+	a.home:active {
+		color: magenta;
+	}
+}
+/*To display the map on the right in Shops.html*/
+/*.grocery{
+		float: left;
+	}
+
+	.map{
+		display: inline;
+		float: right;
+	}*/

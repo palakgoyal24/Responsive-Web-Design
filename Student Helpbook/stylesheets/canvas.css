@@ -1,0 +1,23 @@
+/*Mobile Phones*/
+@media screen and (max-width: 500px) {
+  #faqCanvas {
+    display: none;
+  }
+  
+  .map{
+	position: absolute;
+    top: 10px;
+	float: left;
+  }
+}
+/*Tablets*/
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  #faqCanvas{
+	width:500px;
+  }
+  
+  .map{
+    top: 20px;
+	float: left;
+  }
+}

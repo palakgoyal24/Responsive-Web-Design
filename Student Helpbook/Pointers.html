@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-GB" manifest="Offline.appcache">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="General Instructions to the new joiners">
+	<meta name="keywords" content="pointers,faqs,enquiry">
+	<meta name="keywords" content="emergency,security,enquiry">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student Helpbook | Few Pointers</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheets/canvas.css">
+	<link rel="stylesheet" href="stylesheets/styles.css" />
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		/*To animate text inside the canvas
+		http://www.authorcode.com/text-animation-small-to-its-full-size-in-html5/ */
+		var can, ctx, step = 10, steps = 50;
+				delay = 20;
+
+        function init() {
+            can = document.getElementById("faqCanvas");
+            ctx = can.getContext("2d");
+            ctx.fillStyle = "blue";
+            ctx.font = "10pt Comic Sans MS";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            TextSmallToBig();
+        }
+        function TextSmallToBig() {
+            step++;
+            ctx.clearRect(0, 0, can.width, can.height);
+            ctx.save();
+            ctx.translate(can.width / 2, can.height / 2);
+            ctx.font = step + "pt Comic Sans MS";
+            ctx.fillText("General Instructions", 0, 0);
+            ctx.restore();
+            if (step < steps)
+                var t = setTimeout('TextSmallToBig()', 20);
+        }
+	</script>
+</head>
+
+<body onload="init();"><!--calls the function init()-->
+	<header>
+	<!-- Inspired by bootstrap-->
+	<nav id="header-nav" class="navbar navbar-dark bg-primary">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<div class="navbar-brand visible-xs">
+					<a href="index.html"><h1>Student Helpbook</h1></a>
+				</div>
+
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<div id="collapsable-nav" class="collapse navbar-collapse">
+				 <ul id="nav-list" class="nav navbar-nav navbar-left">
+					<li>
+						<a href="index.html">
+							<span class="glyphicon glyphicon-home"></span></a>
+					</li>
+					<li>
+						<a href="Bus.html">
+							Buses</a>
+					</li>
+					<li>
+						<a href="Shops.html">Grocery</a>
+					</li>
+					<li>
+						<a href="BRP.html">BRP Collection</a>
+					</li>
+					<li>
+						<a href="Rail.html">Rail</a>
+					</li>
+					<li>
+						<a href="Emergency Contacts.html">Emergency Contacts</a>
+					</li>
+					<li>
+						<a href="Location.html">Current Location</a>
+					</li>
+					<li>
+						<a href="Discounts.html">Student Discounts</a>
+					</li>
+					<li class='active'>
+						<a href="Pointers.html">FAQs</a>
+					</li>
+				</ul>
+
+				<ul id="nav-list" class="nav navbar-nav navbar-right">
+					<li>
+						<a href="Registration.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+					</li>
+					<script type="text/javascript">
+						//Using sessionStorage to display the Username in place of Login tab.
+						if(sessionStorage.getItem('Username'))
+						{
+							document.write("<li><a href='#'>Welcome " + sessionStorage.getItem('Username') + "</a>");
+						}
+						else
+						{
+							document.write("<li><a href='Login.html'><span class='glyphicon glyphicon-log-in'></span> Login</a></li>")
+						}
+						</script>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	</header>
+
+<div class="container-fluid">
+	<canvas id="faqCanvas" width="1000" height="80" style="border:1px solid #d3d3d3;">
+	If you see this message, your browser does not support the HTML5 canvas tag.</canvas>
+
+	<ul>
+		<li>Carry upto 500 GBP cash with you when you come. Also, bring a traveller card that has 'chip and pin' facility as you will not be able to use the OTP system here.</li>
+		<li>Your home SIM will not work here no matter what international roaming pack you take and come.</li>
+		<li>It is advisable that you either buy an International SIM or the best thing is to buy a SIM from the airport along with the top-up. That way it would be easier for you to contact back home as well here at Surrey if you have any difficulties.</li>
+		<li>Be prepared for your room wi-fi to not work initially. The best suggestion that I would give you is that connect the LAN cable to your laptop and access the internet. Later if your wi-fi doesn't work, you can ask for help from the IT department.</li>
+		<li>Be prepared to walk a lot. I would advise you carry your sports shoes and use them till the time you settle down here.</li>
+		<li>It is going to be cold here, so carry sweater and jacket along with you in your hand bag specially during the night.</li>
+		<li>Carry atleast one warm blanket to keep you warm on the first day if your heater does not work.</li>
+		<li>You will have to carry all your luggage on your own, there would be no help provided to you. There are chances that you might even have to climb up few floors along with your luggage.</li>
+		<li>The most IMPORTANT thing is to INTERACT with as many people as you can. Don't feel shy to ask questions. People will always help you.</li>
+		<li>Carry food with you to last about atleast for a period of 2-3 weeks.</li>
+		<li>Learn to cook if you don't know how to cook because you would require that the most.</li>
+	</ul>
+	<p id="objective" style="color:brown;">My objective was not to scare you but to prepare you all the difficulties you might face in your initial days so that you are already prepared to face the challenges.</p>
+</div>
+
+<footer>
+	<hr>
+	<div id="connect" class="container-fluid">
+		<h5>Connect with Surrey</h5>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 text-left">
+					<a title="Find us on Facebook" href="https://www.facebook.com/universityofsurrey?fref=ts"><img src="Images\facebook-icon.png" alt="Facebook Logo" class="animate2" width="35" height="35"/> </a>
+					<a title="Follow us on Twitter" href="https://twitter.com/UniOfSurrey"><img src="Images\Twitter-icon.png" alt="Twitter Logo" class="animate2" width="35" height="35" /> </a>
+					<a title="Watch us on YouTube" href="http://www.youtube.com/user/UniversityofSurrey"> <img src="Images\youtube-icon.png" alt="Youtube Logo" class="animate2" width="35" height="35"/> </a>
+					<a title="Join us on Google+" href="https://plus.google.com/+universityofsurrey"> <img src="Images\Google-plus-icon.png" alt="Google + Logo" class="animate2" width="35" height="35"/> </a>
+					<a title="Find us on the Conversation" href="http://theconversation.com/institutions/university-of-surrey"> <img src="Images\conversations-icon.png" alt="Conversation Logo" class="animate2" width="35" height="35"/> </a>
+					<a title="Look at us on Instagram" href="http://instagram.com/uniofsurrey?ref=badge"> <img src="Images\instagram-icon.png" alt="Instagram Logo" class="animate2" width="35" height="35"/> </a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 text-right">&copy; Copyright Palak Goyal</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

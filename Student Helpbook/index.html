@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-GB" manifest="Offline.appcache">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Welcome page for new students.">
+	<meta name="keywords" content="welcome,freshers">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student Helpbook | Home Page</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheets/bounce.css" />
+	<link rel="stylesheet" href="stylesheets/styles.css" />
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<header>
+<!-- Inspired by bootstrap-->
+<nav id="header-nav" class="navbar navbar-dark bg-primary">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<div class="navbar-brand visible-xs">
+				<a href="index.html"><h1>Student Helpbook</h1></a>
+			</div>
+
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+
+		<div id="collapsable-nav" class="collapse navbar-collapse">
+			 <ul id="nav-list" class="nav navbar-nav navbar-left">
+				<li class="active">
+					<a href="index.html">
+						<span class="glyphicon glyphicon-home"></span></a>
+				</li>
+				<li>
+					<a href="Bus.html">
+						Buses</a>
+				</li>
+				<li>
+					<a href="Shops.html">Grocery</a>
+				</li>
+				<li>
+					<a href="BRP.html">BRP Collection</a>
+				</li>
+				<li>
+					<a href="Rail.html">Rail</a>
+				</li>
+				<li>
+					<a href="Emergency Contacts.html">Emergency Contacts</a>
+				</li>
+				<li>
+					<a href="Location.html">Current Location</a>
+				</li>
+				<li>
+					<a href="Discounts.html">Student Discounts</a>
+				</li>
+				<li>
+					<a href="Pointers.html">FAQs</a>
+				</li>
+      </ul>
+
+      <ul id="nav-list" class="nav navbar-nav navbar-right">
+        <li>
+					<a href="Registration.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+				</li>
+				<script type="text/javascript">
+					//Using sessionStorage to display the Username in place of Login tab.
+					if(sessionStorage.getItem('Username'))
+					{
+						document.write("<li><a href='#'>Welcome " + sessionStorage.getItem('Username') + "</a>");
+					}
+					else
+					{
+						document.write("<li><a href='Login.html'><span class='glyphicon glyphicon-log-in'></span> Login</a></li>")
+					}
+					</script>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<div id="main-content" class="container">
+	<p>Welcome Fresher to Surrey! Hope you settle down quickly.</p>
+	<br>
+	<!-- <div class="caption"> -->
+		<div id="main-tiles" class="row">
+			<div id="icons" class="col-xs-6 col-sm-4 col-md-3 text-center">
+				<a href="Bus.html" class="home"><img src="Images/bus.png" class="animate1" height="200" width="200" alt="bus"><br><span id="icon-names">Buses</span></a>
+			</div>
+			<div id="icons" class="col-xs-6 col-sm-4 col-md-3 text-center">
+				<a href="Shops.html" class="home"><img src="Images/shop.png" class="animate1" height="200" width="200" alt="shop"><br><span id="icon-names">Grocery</span></a>
+			</div>
+			<div id="icons" class="col-xs-6 col-sm-4 col-md-3  text-center">
+				<a href="BRP.html" class="home"><img src="Images/post.png" class="animate1" height="200" width="200" alt="BRP"><br><span id="icon-names">BRP Collection</span></a>
+			</div>
+			<div id="icons" class="col-xs-6 col-sm-4 col-md-3  text-center">
+				<a href="https://www.surrey.ac.uk/" target="_blank" class="home"><img src="Images/website.png" class="animate1" height="200" width="200" alt="website"><br><span id="icon-names">Full Website</span></a>
+			</div>
+			<div id="icons" class="col-xs-6 col-sm-4 col-md-3 text-center">
+				<a href="Rail.html" class="home"><img src="Images/rail.png" class="animate1" height="200" width="200" alt="rail"><br><span id="icon-names">Rail</span></a>
+			</div>
+			<div id="icons" class="col-xs-6 col-sm-4 col-md-3 text-center">
+				<a href="Emergency Contacts.html" class="home"><img src="Images/emergency.png" class="animate1" height="200" width="200" alt="emergency"><br><span id="icon-names">Emergency Contacts</span></a>
+			</div>
+			<div id="icons" class="col-xs-6 col-sm-4 col-md-3 text-center">
+				<a href="Location.html" class="home"><img src="Images/location.png" class="animate1" height="200" width="200" alt="location"><br><span id="icon-names">Current Location</span></a>
+			</div>
+			<div id="icons" class="col-xs-6 col-sm-4 col-md-3 text-center">
+				<a href="Discounts.html" class="home"><img src="Images/discount.png" class="animate1" height="200" width="200" alt="discount"><br><span id="icon-names">Student Discounts</span></a>
+			</div>
+			<div id="icons" class="col-xs-6 col-sm-4 col-md-3 text-center">
+				<a href="Pointers.html" class="home"><img src="Images/faq.png" class="animate1" height="200" width="200" alt="faq"><br><span id="icon-names">FAQs</span></a>
+			</div>
+		</div>
+</div>
+
+<footer>
+	<hr>
+	<div id="connect" class="container-fluid">
+		<h5>Connect with Surrey</h5>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 text-left">
+					<a title="Find us on Facebook" href="https://www.facebook.com/universityofsurrey?fref=ts"><img src="Images\facebook-icon.png" alt="Facebook Logo" class="animate2" width="35" height="35"/> </a>
+					<a title="Follow us on Twitter" href="https://twitter.com/UniOfSurrey"><img src="Images\Twitter-icon.png" alt="Twitter Logo" class="animate2" width="35" height="35" /> </a>
+					<a title="Watch us on YouTube" href="http://www.youtube.com/user/UniversityofSurrey"> <img src="Images\youtube-icon.png" alt="Youtube Logo" class="animate2" width="35" height="35"/> </a>
+					<a title="Join us on Google+" href="https://plus.google.com/+universityofsurrey"> <img src="Images\Google-plus-icon.png" alt="Google + Logo" class="animate2" width="35" height="35"/> </a>
+					<a title="Find us on the Conversation" href="http://theconversation.com/institutions/university-of-surrey"> <img src="Images\conversations-icon.png" alt="Conversation Logo" class="animate2" width="35" height="35"/> </a>
+					<a title="Look at us on Instagram" href="http://instagram.com/uniofsurrey?ref=badge"> <img src="Images\instagram-icon.png" alt="Instagram Logo" class="animate2" width="35" height="35"/> </a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 text-right">&copy; Copyright Palak Goyal</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
